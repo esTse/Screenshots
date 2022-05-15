@@ -24,7 +24,6 @@ router.get("/viewscreenshot", (req, res) => {
 
 router.get("/flag", (req, res) => {
 	if(req.ip == '127.0.0.1'){
-		console.log(req.ip)
 		res.status(200).send('CTF{FL4G_F0R_T3ST1NG}');
 	}else{
 		res.status(403).send({
